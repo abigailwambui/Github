@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { RepoComponent } from './repo/repo.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    RepoComponent
+    RepoComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
