@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {UserService } from './users/user.service';
+import {HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { RepoComponent } from './repo/repo.component';
@@ -13,12 +15,13 @@ import { DateCountPipe } from './date-count.pipe';
     SearchComponent,
     RepoComponent,
     DateCountPipe
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
