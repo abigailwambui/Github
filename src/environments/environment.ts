@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl:"https://api.github.com/users",
+  access_token: "6267ae380291d7086b9d22ac8de0183d608715f7"
+  rapiUrl: "https://api.github.com/repos/",
 };
 
 /*
