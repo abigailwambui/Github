@@ -8,8 +8,8 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  profile:any[];
-  repos:any[];
+  profile:any;
+  repos:any;
   username:string;
   constructor(private profileService: UserService) {
 
